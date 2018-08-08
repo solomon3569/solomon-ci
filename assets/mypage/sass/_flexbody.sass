@@ -1,0 +1,38 @@
+// Flex Structure
+.font_family
+    font-family: $font_family
+    color: #fff
+    height: 100vh
+    width: 100%
+    position: relative
+    line-height: 0
+    max-width: 100%
+    overflow-x: hidden
+    overflow-y: auto
+    -webkit-overflow-scrolling: touch
+.tmp_page
+    width: 100%
+    height: 100%
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-direction: column
+    max-width: 100%
+    overflow-x: hidden
+    overflow-y: auto
+    -webkit-overflow-scrolling: touch
+.body_positon
+    overflow-y: auto
+    -webkit-overflow-scrolling: touch
+    flex: 1 1 auto
+    overflow-y: auto
+    position: relative
+    -webkit-overflow-scrolling: touch
+.body_positon::-webkit-scrollbar
+    display: none
+.body_positon .main_frame
+    padding: 0
+.main_bkg_color
+    background-color: $main_bkg_color

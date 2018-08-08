@@ -1,0 +1,390 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(../../lib/font_family/Raleway-Light.ttf);
+}
+.font_family {
+  font-family: Raleway, sans-serif;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  line-height: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tmp_page {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.body_positon {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.body_positon::-webkit-scrollbar {
+  display: none;
+}
+
+.body_positon .main_frame {
+  padding: 0;
+}
+
+.main_bkg_color {
+  background-color: #8c7762;
+}
+
+.bkg_all {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.main_bkg_position {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.font_text {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: #e4e4e3;
+}
+@media only screen and (max-width: 767px) {
+  .font_text {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .font_text {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+}
+
+.font_text_title {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  color: #e4e4e3;
+}
+@media only screen and (max-width: 767px) {
+  .font_text_title {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+}
+
+.align_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.font_text_title_content {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  color: #212529;
+}
+@media only screen and (max-width: 767px) {
+  .font_text_title_content {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+.font_text_content {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: #212529;
+}
+@media only screen and (max-width: 767px) {
+  .font_text_content {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .font_text_content {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+}
+
+.backicon_img {
+  background-image: url(../../mypage/img/backicon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.back_from_img {
+  background-image: url(../../mypage/img/back_from.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.header_setting {
+  display: block;
+  background-color: #8c7762;
+  height: 55px;
+  text-align: center;
+  color: #e4e4e3;
+  margin: 0;
+}
+
+.header_page_left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  min-height: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .header_page_left {
+    min-height: 20px;
+  }
+}
+.header_page_left:hover {
+  color: #e4e4e3;
+  text-decoration: unset;
+}
+
+.header_page_right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  min-height: 40px;
+  margin-left: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .header_page_right {
+    min-height: 20px;
+  }
+}
+.header_page_right:hover {
+  color: #e4e4e3;
+  text-decoration: unset;
+}
+
+.header_bkg_position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header_right_align {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_padding {
+  padding: 0 5%;
+}
+
+.header_right_align .header_b4 {
+  width: auto;
+}
+
+.introduction-img {
+  background-image: url(../../mypage/img/introduction.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.member-img {
+  background-image: url(../../mypage/img/member.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.message-img {
+  background-image: url(../../mypage/img/message.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.shoppingcart-img {
+  background-image: url(../../mypage/img/shoppingcart.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.chatroom-img {
+  background-image: url(../../mypage/img/chatroom.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pinterest_show-img {
+  background-image: url(../../mypage/img/pinterest_show.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.google_map-img {
+  background-image: url(../../mypage/img/google_map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.facebook_show-img {
+  background-image: url(../../mypage/img/facebook_show.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro_bkg_me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.intro_bkg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60vh;
+  margin-bottom: 35px;
+}
+@media only screen and (max-width: 767px) {
+  .intro_bkg {
+    min-height: 90vh;
+  }
+}
+
+.intro_me_bkg {
+  border-radius: 100%;
+  width: 157px;
+}
+
+.intro_text_bkg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.intro_text_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro_hover_text:hover {
+  text-decoration: none;
+  color: #e4e4e3;
+}
+
+.into_underline:hover {
+  text-decoration: underline;
+  color: #e4e4e3;
+}
+
+.introduce_text_bkg {
+  background-color: rgba(17, 16, 20, 0.6);
+  padding: 0 1rem;
+}
+
+.member_text_position {
+  padding-left: 10px;
+}

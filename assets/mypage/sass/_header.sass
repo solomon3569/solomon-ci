@@ -1,0 +1,41 @@
+// Header
+@each $file_name in backicon, back_from
+    .#{$file_name}_img
+        +bkg_url($file_name,png)
+        +bkg_all(no-repeat, center, contain)
+.header_setting
+    display: block
+    background-color: $header_setting
+    height: 55px
+    text-align: center
+    color: $header_setting_text
+    margin: 0
+.header_page_left
+    +display(flex,center,none,left,none)
+    min-height: 40px
+    +rwd(md)
+        min-height: 20px
+    &:hover
+        color: $header_setting_text
+        text-decoration: unset
+.header_page_right
+    +display(flex,center,none,right,none)
+    min-height: 40px
+    margin-left: 15px
+    +rwd(md)
+        min-height: 20px
+    &:hover
+        color: $header_setting_text
+        text-decoration: unset
+.header_bkg_position
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+.header_right_align
+    display: flex
+    justify-content: flex-end
+.header_padding
+    padding: 0 5%
+.header_right_align .header_b4
+    width: auto

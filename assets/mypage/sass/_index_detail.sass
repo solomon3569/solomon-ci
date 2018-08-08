@@ -1,0 +1,132 @@
+// index_detail font style
+@each $file_name in loveicon_normal
+    .#{$file_name}_img
+        +bkg_url($file_name,png)
+        +bkg_all(no-repeat, center, contain)
+.bkg_color_anchor_index_detail
+    background-color: $index_detail_anchor
+.bkg_color_knight_index_detail
+    background-color: $index_detail_knight
+.content_title
+    display: block
+    text-align: center
+    padding: 3%
+.content_title_user
+    display: block
+    text-align: center
+.font_text_index_detail
+    display: block
+    position: relative
+    +font_size(1.5, 2, rem)
+    +rwd(md)
+        +font_size(0.85, 1.5, rem)
+    +rwd(xxs)
+        +font_size(0.75, 1.2, rem)
+.font_color
+    color: $index_detail_unit
+.index_detail_font_color
+    color: $index_detail_text
+.content_data_bar
+    background-color: #fef0cb
+    display: flex
+    align-items: center
+    min-height: 65px
+    border-radius: 100px
+    +rwd(md)
+        min-height: 30px
+    .b4_padding
+        padding: 0
+.content_title .row
+    margin: 0
+.content_data_bar_text_left
+    display: flex
+    width: 50%
+.content_data_bar_text_mid
+    display: flex
+    width: 30%
+    justify-content: flex-end
+.content_data_bar_text_right
+    display: flex
+    width: 20%
+.content_data_bar .font_position_left
+    margin-left: 35px
+    +rwd(md)
+        margin-left: 18px
+.content_data_bar .font_position_right
+    margin-right: 35px
+    +rwd(md)
+        margin-right: 18px
+.content_body_reward_bkg
+    min-height: 174px
+    position: relative
+    +rwd(md)
+        min-height: 58px
+.content_body_reward_bkg .b4_padding
+    padding: 0
+.footer_bkg
+    padding: 0 15px 0 0
+    border-bottom: 1px solid white
+.content_body_reward_left
+    height: 68px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    +rwd(md)
+        height: 25px
+.content_body_reward_mid_nohead
+    min-height: 200px
+    margin-top: -30px
+    position: relative
+    display: flex
+    align-items: flex-end
+    +rwd(md)
+        min-height: 100px
+.content_body_pic
+    height: 106px
+    display: block
+    z-index: 0
+    width: 106px
+    border-radius: 100px
+    +rwd(md)
+        height: 37px
+        width: 37px
+.content_body_empty
+    min-height: 10px
+    position: absolute
+    display: block
+    z-index: 0
+    width: 130px
+    margin: 0 0 2px 10px
+    top: 15px
+    +rwd(md)
+        width: 58px
+        margin: 0 0 2px 5px
+        top: -5px
+.content_body_pic_position
+    top: 20px
+    +rwd(md)
+        top: -5px
+.content_body_logohead_mid
+    background-position: left bottom
+.text_position.text_position_left
+    text-align: left
+    padding-right: 0px
+    padding-left: 8%
+.text_position_right
+    display: flex
+    text-align: right
+.text_align_right
+    text-align: right
+.text_position_right.text_bkg_position
+    flex-direction: row
+    padding-left: 5px
+    padding-right: 35px
+    +rwd(md)
+        padding-right: 0px
+.text_margin_right
+    margin-right: 15px
+.main_text_control
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis

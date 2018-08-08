@@ -1,0 +1,38 @@
+// General font style start
+.bkg_all
+    +bkg_all(no-repeat,center,contain)
+.main_bkg_position
+    +display(flex,center,column,none,relative)
+.font_text
+    +font_size(1, 2.5, rem)
+    color: $font_text_color
+    +rwd(md)
+        +font_size(0.85, 1.5, rem)
+    +rwd(xxs)
+        +font_size(0.75, 1.5, rem)
+.font_text_title
+    +font_size(1.25, 2.5, rem)
+    +rwd(md)
+        +font_size(1, 2, rem)
+    color: $font_text_title_color
+.flex_center
+    display: flex
+    justify-content: center
+.align_center
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 0
+.font_text_title_content
+    +font_size(1.25, 2.5, rem)
+    +rwd(md)
+        +font_size(1, 2, rem)
+    color: $font_text_title_content
+.font_text_content
+    +font_size(1, 2.5, rem)
+    color: $font_text_content
+    +rwd(md)
+        +font_size(0.85, 1.5, rem)
+    +rwd(xxs)
+        +font_size(0.75, 1.5, rem)

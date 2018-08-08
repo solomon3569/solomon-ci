@@ -1,0 +1,10 @@
+CREATE TABLE ci_news (
+ `ne_id` int(10) NOT NULL AUTO_INCREMENT,
+ `ne_created` datetime NOT NULL,
+ `ne_lang` varchar(2) NOT NULL,
+ `ne_title` varchar(255) NOT NULL,
+ `ne_desc` varchar(255) NOT NULL,
+ `ne_img` varchar(255) NOT NULL,
+ PRIMARY KEY (`ne_id`)
+);
+

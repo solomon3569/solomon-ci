@@ -1,0 +1,33 @@
+// Index page
+@each $file_name in introduction, member, message, shoppingcart, chatroom, pinterest_show, google_map, facebook_show
+    .#{$file_name}-img
+        +bkg_url($file_name,jpg)
+        +bkg_all(no-repeat, center, cover)
+.intro_bkg_me
+    +display(flex,center,column,center,none)
+    min-height: 50vh
+.intro_bkg
+    +display(flex,center,column,center,none)
+    min-height: 60vh
+    margin-bottom: 35px
+    +rwd(md)
+        min-height: 90vh
+.intro_me_bkg
+    border-radius: 100%
+    width: 157px
+.intro_text_bkg
+    +display(flex,center,column,center,none)
+    margin-top: 1rem
+.intro_text_btn
+    +display(flex,center,none,center,none)
+.intro_hover_text
+    +a_hover(none,$font_text_color)
+.into_underline
+    +a_hover(underline,$font_text_color)
+.introduce_text_bkg
+    background-color: rgba(17, 16, 20, 0.6)
+    padding: 0 1rem
+.member_text_position
+    padding-left: 10px
+
+

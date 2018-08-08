@@ -1,0 +1,70 @@
+// notice font style
+.font_text_notice
+    +font_size(1.5, 2, rem)
+    position: relative
+    +rwd(md)
+        +font_size(0.85, 1.5, rem)
+    +rwd(xxs)
+        +font_size(0.75, 1.2, rem)
+.font_text_notice tbody tr > th
+    border-color: $notice
+    border-width: 3px
+    vertical-align: middle
+.main_content_text
+    text-align: left
+    margin: 0 10% 5% 10%
+    display: block
+    color: $notice_text
+.main_bkg_title_text
+    display: flex
+    justify-content: center
+    color: #fff
+    margin-bottom: 5%
+.footer_bkg_gift
+    display: flex
+    justify-content: center
+    width: 100%
+    padding: 0 5%
+    +rwd(md)
+        padding: 0
+.footer_content_gift
+    display: flex
+    width: 23%
+    min-height: 200px
+    +rwd(md)
+        min-height: 66px
+    +rwd(xxs)
+        width: 25%
+.notice_main_bkg_color
+    background-color: $notice
+.main_bkg
+    padding: 0 0 5% 0
+.notice_main_bkg_content
+    padding-top: 5%
+/* Table start */
+.main_position_table
+    margin: 5%
+    +rwd(md)
+        margin: 5% 0
+.main_table_width_first
+    width: 50%
+.main_table_width_sec
+    width: 50%
+.main_align_text
+    text-align: center
+    background-color: $notice_anchor
+    color: $notice_table_text
+.main_align_text_knight
+    text-align: center
+    background-color: $notice_knight
+    color: $notice_table_text
+.main_content_align_text
+    text-align: center
+.main_bkg_table_color
+    background-color: #fff
+.main_table_odd_color
+    background-color: $main_table_odd_color
+    color: $notice_table_text
+.main_table_even_color
+    background-color: $main_table_even_color
+    color: $notice_table_text
