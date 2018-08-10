@@ -23,7 +23,7 @@
                 <?php if (isset($_SESSION['username']) && $_SESSION['logged_in'] === true) : ?>
                     <a href="<?= base_url('logout') ?>" class="header_page_right font_text"> <?=$this->lang->line('home-logout'); ?> </a>
                 <?php else : ?>
-                    <a href="<?= base_url('login') ?>" class="header_page_right font_text"> <?=$this->lang->line('home-logout'); ?> </a>
+                    <a href="<?= base_url('login') ?>" class="header_page_right font_text"> <?=$this->lang->line('home-login'); ?> </a>
                     <a href="<?= base_url('register') ?>" class="header_page_right font_text"> <?=$this->lang->line('Register'); ?> </a>
                 <?php endif; ?>
             </div>
