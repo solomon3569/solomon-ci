@@ -92,9 +92,6 @@ class User extends MY_Controller {
      * @return void
      */
     public function login() {
-        // load the language
-        $this->lang->load('ac_login');
-
         // create the data object
         $data = new stdClass();
 

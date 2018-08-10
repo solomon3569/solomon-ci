@@ -1,8 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <?php include APPPATH . 'views/include/lib_js.php'?>
 <script>
-
-
     $("#lang_choose").change(function()
     {
         var lang_choose = $("#lang_choose").val();

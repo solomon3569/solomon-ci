@@ -11,6 +11,8 @@ class MY_Controller extends CI_Controller {
         parent::__construct();
         $this->load_lang();
         $this->load->helper('fn_test');
+        // load the language
+        $this->lang->load('ac_login');
     }
     /**
     * return module language file

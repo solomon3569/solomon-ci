@@ -1,10 +1,10 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-<header id="site-header">
-    <div class="container-fluid header_padding">
+<header id="site-header" class="header_bkg_color">
+    <div class="container header_padding">
         <div class="row align-items-center header_setting">
-            <div class="col-4">
+            <div class="col-2">
                 <a href="/mypage" class="header_page_left font_text">
-                    Homepage
+                    <?=$this->lang->line('home'); ?>
                 </a>
             </div>
             <div class="col font_text_title">
@@ -21,10 +21,10 @@
                     </select>
                 </div>
                 <?php if (isset($_SESSION['username']) && $_SESSION['logged_in'] === true) : ?>
-                    <a href="<?= base_url('logout') ?>" class="header_page_right font_text"> Logout </a>
+                    <a href="<?= base_url('logout') ?>" class="header_page_right font_text"> <?=$this->lang->line('home-logout'); ?> </a>
                 <?php else : ?>
-                    <a href="<?= base_url('login') ?>" class="header_page_right font_text"> Login </a>
-                    <a href="<?= base_url('register') ?>" class="header_page_right font_text"> Register </a>
+                    <a href="<?= base_url('login') ?>" class="header_page_right font_text"> <?=$this->lang->line('home-logout'); ?> </a>
+                    <a href="<?= base_url('register') ?>" class="header_page_right font_text"> <?=$this->lang->line('Register'); ?> </a>
                 <?php endif; ?>
             </div>
         </div>

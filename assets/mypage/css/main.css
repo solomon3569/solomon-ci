@@ -213,7 +213,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .header_setting {
   display: block;
-  background-color: #8c7762;
   height: 55px;
   text-align: center;
   color: #e4e4e3;
@@ -271,6 +270,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .header_right_align .header_b4 {
   width: auto;
+}
+
+.header_bkg_color {
+  background-color: #8c7762;
 }
 
 .introduction-img {
@@ -383,6 +386,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .introduce_text_bkg {
   background-color: rgba(17, 16, 20, 0.6);
   padding: 0 1rem;
+}
+
+.introduce_text_bkg_fr {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(17, 16, 20, 0.6);
+  padding: 2vh;
+  flex-direction: column;
+  margin-right: 20%;
+  margin-left: 10%;
+}
+@media only screen and (max-width: 413px) {
+  .introduce_text_bkg_fr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.introduce_text_font_text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.introduce_text_des {
+  padding-top: 1rem;
 }
 
 .member_text_position {

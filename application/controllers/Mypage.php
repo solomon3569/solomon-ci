@@ -32,8 +32,6 @@ class Mypage extends MY_Controller {
             // validation not ok, send validation errors to the view
             // $this->load->view('user/login/login');
             redirect('/login');
-
-
         } else {
             $data = array(
                 'link_css'    => link_tag($this->link_css)

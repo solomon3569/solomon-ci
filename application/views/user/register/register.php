@@ -27,28 +27,28 @@
                 <?php endif; ?>
                 <div class="col-md-12 font_text_title_content">
                     <div class="page-header">
-                        <h1>Register</h1>
+                        <h1><?=$this->lang->line('Register'); ?></h1>
                     </div>
                     <?= form_open() ?>
                         <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter a username">
-                            <p class="help-block">At least 4 characters, letters or numbers only</p>
+                            <label for="username"><?=$this->lang->line('username-name'); ?></label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="<?=$this->lang->line('username-tip'); ?>">
+                            <p class="help-block"><?=$this->lang->line('username-hint'); ?></p>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
-                            <p class="help-block">A valid email address</p>
+                            <label for="email"><?=$this->lang->line('email'); ?></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="<?=$this->lang->line('email-tip'); ?>">
+                            <p class="help-block"><?=$this->lang->line('email-hint'); ?></p>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password">
-                            <p class="help-block">At least 6 characters</p>
+                            <label for="password"><?=$this->lang->line('password'); ?></label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="<?=$this->lang->line('password-tip'); ?>">
+                            <p class="help-block"><?=$this->lang->line('password-hint'); ?></p>
                         </div>
                         <div class="form-group">
-                            <label for="password_confirm">Confirm password</label>
-                            <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="Confirm your password">
-                            <p class="help-block">Must match your password</p>
+                            <label for="password_confirm"><?=$this->lang->line('confirm-Password'); ?></label>
+                            <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="<?=$this->lang->line('confirm-Password-tip'); ?>">
+                            <p class="help-block"><?=$this->lang->line('confirm-Password-hint'); ?></p>
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-default" value="Register">

@@ -27,7 +27,7 @@
                 <?php endif; ?>
                 <div class="col-md-12">
                     <div class="page-header font_text_title_content">
-                        <h1>Login</h1>
+                        <h1><?=$this->lang->line('login'); ?></h1>
                     </div>
                     <?= form_open() ?>
                     <div class="form-group font_text_content">

@@ -21,5 +21,6 @@
         </div>
     </main><!-- #site-content -->
     <?php include APPPATH . 'views/footer.php'?>
+    <?php include APPPATH . 'views/include/lib_js_jump.php'?>
 </body>
 </html>
