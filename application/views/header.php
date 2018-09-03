@@ -7,10 +7,7 @@
                     <?=$this->lang->line('home'); ?>
                 </a>
             </div>
-            <div class="col font_text_title">
-                <span class="flex_center"></span>
-            </div>
-            <div class="col-4 header_right_align">
+            <div class="col header_right_align">
                 <div class="input-group header_b4">
                     <select class="custom-select" id="lang_choose">
                         <option selected>Language</option>

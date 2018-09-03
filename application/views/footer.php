@@ -13,7 +13,7 @@
             cache:false,
             success: function(result){
                 console.log(lang_choose);
-                location.reload();
+                // location.reload();
             }
         })
     });
